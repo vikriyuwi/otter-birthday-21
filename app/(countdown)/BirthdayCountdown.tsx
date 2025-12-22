@@ -46,7 +46,7 @@ export default function BirthdayCountdown() {
   if (!isClient) return <span>Loading...</span>;
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-10 items-center justify-center">
+    <div className="p-10 grid grid-cols-2 md:grid-cols-4 gap-10 items-center justify-center">
       {/* DAYS */}
       <div style={{ textAlign: 'center' }}>
         <h1 className='text-9xl font-headline'>{timeLeft.days}</h1>
