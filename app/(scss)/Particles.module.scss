@@ -1,0 +1,51 @@
+// Particles.module.scss
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  background-image: radial-gradient(circle at center, rgba(255,255,255,.1) 0%, black 10%, black 60%);
+  overflow: hidden;
+  perspective: 800px;
+  transform-style: preserve-3d;
+}
+
+// Renamed from .tri to .particle
+.particle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  // --- CHANGED SECTION START ---
+  // Old triangle hack removed.
+  // New circle properties added:
+  width: var(--size);
+  height: var(--size);
+  background-color: hsl(var(--hue), 70%, 20%);
+  border-radius: 50%;
+  // --- CHANGED SECTION END ---
+
+  // This keeps the element centered on its coordinates
+  margin-left: calc(var(--size) / -2);
+  margin-top: calc(var(--size) / -2);
+  
+  filter: grayscale(1);
+  opacity: 0;
+  
+  // Note: Rotating a solid circle is invisible, but we keep it 
+  // to maintain the exact same motion path as the original effect.
+  transform: rotate(var(--rotate)) translate3d(0, 0, -1500px) scale(0);
+  animation: warp 10s infinite linear;
+  animation-delay: var(--delay);
+}
+
+@keyframes warp {
+  0% {
+    opacity: 1;
+    transform: 
+      rotate(calc(var(--rotate) * 1.5)) 
+      translate3d(var(--x), var(--y), 1000px) 
+      scale(1);
+  }
+}
