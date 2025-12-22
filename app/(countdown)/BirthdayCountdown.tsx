@@ -50,25 +50,25 @@ export default function BirthdayCountdown() {
       {/* DAYS */}
       <div style={{ textAlign: 'center' }}>
         <h1 className='text-9xl font-headline'>{timeLeft.days}</h1>
-        <span>Days</span>
+        <span>DAYS</span>
       </div>
 
       {/* HOURS */}
       <div style={{ textAlign: 'center' }}>
         <h1 className='text-9xl font-headline'>{timeLeft.hours}</h1>
-        <span>Hours</span>
+        <span>HOURS</span>
       </div>
 
       {/* MINUTES */}
       <div style={{ textAlign: 'center' }}>
         <h1 className='text-9xl font-headline'>{timeLeft.minutes}</h1>
-        <span>Minutes</span>
+        <span>MINUTES</span>
       </div>
 
       {/* SECONDS */}
       <div style={{ textAlign: 'center' }}>
         <h1 className='text-9xl text-pink-500 font-headline'>{timeLeft.seconds}</h1>
-        <span>Seconds</span>
+        <span>SECONDS</span>
       </div>
 
     </div>
