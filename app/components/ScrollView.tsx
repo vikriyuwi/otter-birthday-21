@@ -56,10 +56,6 @@ export default function StickyScrollView() {
 
   return (
     <motion.main style={{ backgroundColor }} className="text-white">
-      <div className="h-[100vh] flex items-center justify-center px-20 md:px-72 text-center">
-        <p className="animate-bounce text-gray-300 tracking-widest uppercase">Dedicated for Mr. Otter!</p>
-      </div>
-
       {/* 100vh for every sentence to give enough scroll space */}
       <div ref={containerRef} className="relative h-[500vh]">
         <div className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden">
