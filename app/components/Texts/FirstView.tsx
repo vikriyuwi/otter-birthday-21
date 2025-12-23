@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function FirstView() {
     return (
         <div className="relative flex flex-col w-[100vw] bg-theme-green">
-            <section className="relative sticky top-0 w-full min-h-[100vh] flex flex-col w-full gap-4 md:gap-10 py-10 md:py-32 px-10 md:px-36 lg:px-72 2xl:px-150 items-center justify-center text-black items-center overflow-hidden">
+            <section className="relative sticky top-0 w-full min-h-[100vh] flex flex-col w-full gap-4 md:gap-10 py-10 md:py-32 px-10 md:px-36 lg:px-54 xl:px-100 2xl:px-100 items-center justify-center text-black items-center overflow-hidden">
                 <img
                     src="/images/bg/overlay-otter.svg"
                     className="absolute inset-0 top-0 bottom-0 left-0 right-0 w-full object-cover opacity-50 z-0 pointer-events-none"
