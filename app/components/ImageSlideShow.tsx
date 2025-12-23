@@ -47,10 +47,10 @@ export default function ImageSlideShow() {
       </AnimatePresence>
 
       {/* Content Overlay Example */}
-      <div className="absolute inset-0 flex flex-col items-center justify-end mb-10 2xl:mb-32 z-10 text-theme-green text-center px-10">
+      <div className="absolute inset-0 flex flex-col items-center justify-end mb-10 2xl:mb-20 z-10 text-theme-green text-center px-10">
         <p className='mt-5 2xl:mt-10'><span className='italic font-serif'>Dec 24, 2025</span></p>
         <p className="mt-4 font-black text-6xl md:text-8xl font-serif italic">Happy Birthday,<br />Bubub!</p>
-        <p className='mt-4'>From: <span className="text-pink-400 font-black font-serif italic">LDMV</span>—your boyfriend, your love, love of your life, right now, future, and forevermore</p>
+        <p className='mt-4 text-2xl'>From: <span className="text-pink-400 font-black font-serif italic">LDMV</span>—your boyfriend<br />your love, love of your life, right now, future, and forevermore</p>
       </div>
     </div>
   );
