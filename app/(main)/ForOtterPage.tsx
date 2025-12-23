@@ -23,7 +23,8 @@ export default function ForOtterPage() {
         <div className="flex flex-col w-dvw">
             <div className="h-[100vh] flex flex-col gap-10 items-center justify-center px-20 md:px-72 text-center">
                 <p className="animate-bounce text-gray-300 tracking-widest uppercase">Dedicated for Mr. Otter!</p>
-                <BackgroundMusic src="/music/sweet_disposition.mp3" />
+                {/* <BackgroundMusic src="/music/sweet_disposition.mp3" /> */}
+                <BackgroundMusic src="/music/taylor_inivisble_string.mp3" />
             </div>
             <ScrollView />
             <OtterIntroView imageSrc="/images/otter/5.jpg">
