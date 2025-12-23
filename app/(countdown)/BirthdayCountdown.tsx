@@ -49,26 +49,26 @@ export default function BirthdayCountdown() {
     <div className="p-10 grid grid-cols-2 md:grid-cols-4 gap-10 items-center justify-center">
       {/* DAYS */}
       <div style={{ textAlign: 'center' }}>
-        <h1 className='text-9xl font-headline'>{timeLeft.days}</h1>
-        <span>DAYS</span>
+        <h1 className='text-8xl md:text-9xl text-theme-beige font-headline'>{timeLeft.days}</h1>
+        <span className="text-2xl">DAYS</span>
       </div>
 
       {/* HOURS */}
       <div style={{ textAlign: 'center' }}>
-        <h1 className='text-9xl font-headline'>{timeLeft.hours}</h1>
-        <span>HOURS</span>
+        <h1 className='text-8xl md:text-9xl text-theme-beige font-headline'>{timeLeft.hours}</h1>
+        <span className="text-2xl">HOURS</span>
       </div>
 
       {/* MINUTES */}
       <div style={{ textAlign: 'center' }}>
-        <h1 className='text-9xl font-headline'>{timeLeft.minutes}</h1>
-        <span>MINUTES</span>
+        <h1 className='text-8xl md:text-9xl text-theme-beige font-headline'>{timeLeft.minutes}</h1>
+        <span className="text-2xl">MINUTES</span>
       </div>
 
       {/* SECONDS */}
       <div style={{ textAlign: 'center' }}>
-        <h1 className='text-9xl text-pink-500 font-headline'>{timeLeft.seconds}</h1>
-        <span>SECONDS</span>
+        <h1 className='text-8xl md:text-9xl text-theme-green font-headline'>{timeLeft.seconds}</h1>
+        <span className="text-2xl">SECONDS</span>
       </div>
 
     </div>
