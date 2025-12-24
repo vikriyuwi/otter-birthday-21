@@ -28,7 +28,7 @@ const OtterIntroView: React.FC<Props> = ({
       ref={containerRef}
       // [clip-path:inset(0)] is essential: 
       // It forces the 'fixed' image to be visible ONLY inside this container's boundaries.
-      className={`relative w-full overflow-hidden [clip-path:inset(0)] ${className}`}
+      className={`relative w-full overflow-hidden min-h-[100vh] [clip-path:inset(0)] ${className}`}
     >
       {/* The Background Image */}
       <motion.div
