@@ -36,7 +36,7 @@ export default function ForOtterPage() {
             <FirstView />
             <OtterIntroView imageSrc="/images/otter/2.jpg">
                 <div className="flex flex-col w-full h-full items-center bg-black/50 justify-center text-center gap-4 md:gap-10 px-10 md:px-20">
-                    <h1 className="text-2xl md:text-4xl font-serif italic text-theme-green">On your birthday, my heart is full</h1>
+                    <h1 className="text-2xl md:text-4xl font-serif italic text-theme-green">On your birthday, my heart is full of</h1>
                     <h1 className="text-4xl md:text-9xl font-serif italic text-theme-green font-black">Wishes for you</h1>
                 </div>
             </OtterIntroView>
